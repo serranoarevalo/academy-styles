@@ -1,0 +1,127 @@
+.reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px;
+  background-size: cover;
+  background-position: center center;
+  .reviews__title {
+    color: white;
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+}
+
+.review {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  padding: 25px;
+  flex-direction: column;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 6px;
+  box-shadow: $teachableShadow;
+  .review__header-container {
+    display: flex;
+    justify-content: space-between;
+    .review__header {
+      display: flex;
+      margin-bottom: 15px;
+      font-weight: 600;
+      .review__avatar {
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+      }
+      .review__name-container {
+        .review__name {
+          display: block;
+        }
+        .review__date {
+          color: rgba(0, 0, 0, 0.5);
+          font-size: 12px;
+        }
+      }
+    }
+    .review__source {
+      font-style: italic;
+      a {
+        color: #3498db;
+      }
+    }
+    .review__stars {
+      font-size: 12px;
+    }
+    .review__content {
+      .review__review {
+        font-weight: 400;
+        font-size: 16px !important;
+      }
+    }
+  }
+}
+
+.reviews__button {
+  max-width: none;
+  width: auto;
+  margin-top: 40px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.reviews__page {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-weight: 400;
+  .hero__reviews {
+    min-height: 35vh;
+    width: 100%;
+    padding: 50px 0px;
+    flex-direction: column;
+  }
+  .reviews__review-list {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .review {
+      margin-bottom: 50px;
+      animation: slideIn 0.5s ease-out;
+    }
+  }
+}
+
+.reviews__page .hero__reviews,
+.reviews {
+  background-image: radial-gradient(
+      circle farthest-corner at 10% 20%,
+      rgba(149, 219, 254, 0.5) 0%,
+      rgba(7, 134, 197, 0.5) 90.1%
+    ),
+    url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-0.3.5…EyMDd9&s=3072165…&auto=format&fit=crop&w=1350&q=80");
+  background-position: center center;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
