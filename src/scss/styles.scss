@@ -4,6 +4,7 @@
 @import "course-card.scss";
 @import "buttons.scss";
 @import "reviews.scss";
+@import "footer.scss";
 
 .homepage-hero {
   padding-top: 250px;
@@ -127,82 +128,6 @@ footer {
   padding: 5px !important;
 }
 
-.footer__social .footer__social-title {
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.footer__social .footer__social-icons {
-  display: flex;
-  width: 50%;
-  max-width: 300px;
-  justify-content: space-between;
-}
-
-.footer__social-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer__social-link svg {
-  fill: #bac1c7;
-  transition: fill 0.2s linear;
-}
-
-.footer__social-link:hover svg {
-  fill: white;
-}
-
-.footer__social-link .footer__social-logo {
-  height: 48px;
-  margin-bottom: 5px;
-}
-
-.footer__social-link .footer__social-numbers {
-  font-size: 22px;
-  font-weight: 300;
-  margin-bottom: 5px;
-}
-
-.footer__social-link .footer__social-explanation {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.footer__social a {
-  transition: color 0.2s linear;
-}
-
-.is-scrolling,
-:root:root:root .is-at-top.show-nav-background-color {
-  background-color: #232a38 !important;
-}
-
-.footer__roadmap,
-.footer__social {
-  border-bottom: 1px solid rgba(186, 193, 199, 0.5);
-  margin: 0 auto;
-}
-
-.footer__roadmap {
-  text-align: center;
-  padding-bottom: 39px;
-  color: white;
-  margin-bottom: 70px;
-  font-size: 18px;
-}
-
-.footer__social {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-  padding-bottom: 50px;
-}
-
 .killSidebar {
   color: white;
   display: flex;
@@ -223,6 +148,11 @@ footer {
 
 .fullman {
   margin-left: 0 !important;
+}
+
+.is-scrolling,
+:root:root:root .is-at-top.show-nav-background-color {
+  background-color: #232a38 !important;
 }
 
 /*
