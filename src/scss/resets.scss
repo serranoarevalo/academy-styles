@@ -1,0 +1,25 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  text-rendering: optimizeLegibility;
+  font-size: 100%;
+  font: inherit;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  background-color: #f5f6f7 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400 !important;
+}
+
+input,
+label {
+  font-size: 16px !important;
+}

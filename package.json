@@ -11,6 +11,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/register": "^7.4.4",
     "del": "^5.0.0",
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-csso": "^3.0.1",
@@ -20,6 +21,6 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
-    "deploy": "bash publish.sh"
+    "deploy": "yarn build && gh-pages -d dest"
   }
 }
