@@ -1,6 +1,7 @@
 import gulp from "gulp";
 import sass from "gulp-sass";
 import minify from "gulp-csso";
+import del from "del";
 import autoprefixer from "gulp-autoprefixer";
 
 sass.compiler = require("node-sass");
@@ -8,7 +9,7 @@ sass.compiler = require("node-sass");
 const routes = {
   css: {
     watch: "src/scss/*",
-    src: "src/scss/style.scss",
+    src: "src/scss/styles.scss",
     dest: "dest/css"
   }
 };
@@ -23,7 +24,6 @@ const styles = () =>
     .pipe(sass().on("error", sass.logError))
     .pipe(
       autoprefixer({
-        browsers: ["last 2 versions"],
         flexbox: true,
         grid: "autoplace"
       })
