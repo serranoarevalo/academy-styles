@@ -7,12 +7,16 @@ body {
   line-height: 1.3;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
-  background-color: #f5f6f7 !important;
+  background-color: $bgColor !important;
   color: #333 !important;
   font-weight: 400 !important;
 }
 
-p {
+p,
+div,
+ul,
+a,
+span {
   font-weight: 400 !important;
   font-size: 16px !important;
 }
@@ -29,4 +33,67 @@ h6 {
 input,
 label {
   font-size: 16px !important;
+}
+
+.search {
+  display: none;
+}
+
+.alert {
+  padding: 20px 0px;
+  font-size: 16px;
+  a {
+    font-weight: 600 !important;
+  }
+}
+
+.course-block,
+.block,
+.course-block.odd-stripe,
+.block.odd-stripe,
+.course-block.even-stripe,
+.block.even-stripe,
+.blog-container,
+.course-mainbar,
+.course-sidebar {
+  background-color: $bgColor !important;
+}
+
+.bundle_contents {
+  padding-bottom: 0px;
+}
+
+p.w-subtitles-line span {
+  font-size: 32px !important;
+}
+
+.comments__heading a {
+  font-weight: 500 !important;
+  text-decoration: underline;
+  font-size: 18px !important;
+}
+.comments__block-box__meta-name,
+#comments_total {
+  font-weight: 600 !important;
+}
+
+.faq-question {
+  font-size: 22px !important;
+  font-weight: bold !important;
+}
+
+.section-title {
+  font-size: 18px !important;
+}
+
+textarea {
+  font-size: 16px;
+}
+
+.course-section ul.section-list .section-item .lecture-name {
+  font-weight: 400 !important;
+}
+
+.lecture-content h2.section-title {
+  font-weight: bold !important;
 }

@@ -1,26 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
 @import "variables.scss";
+@import "mixins.scss";
 @import "resets.scss";
 @import "header.scss";
 @import "course-card.scss";
 @import "buttons.scss";
 @import "reviews.scss";
 @import "footer.scss";
+@import "sales_page.scss";
+@import "sales_blocks/checkout.scss";
+@import "sales_blocks/glance.scss";
 
 .homepage-hero {
   padding-top: 250px;
   color: inherit;
-}
-
-.course-block,
-.block,
-.course-block.odd-stripe,
-.block.odd-stripe,
-.course-block.even-stripe,
-.block.even-stripe,
-.blog-container,
-.course-mainbar,
-.course-sidebar {
-  background-color: #f5f6f7 !important;
 }
 
 .course-sidebar {
@@ -61,6 +54,7 @@
 
 .show-love {
   margin-top: 20px;
+  display: none;
 }
 
 .course-section {
@@ -150,33 +144,10 @@ footer {
   margin-left: 0 !important;
 }
 
-.is-scrolling,
-:root:root:root .is-at-top.show-nav-background-color {
+.is-scrolling {
   background-color: #232a38 !important;
 }
 
-/*
-  Course Card
-  */
-.alert {
-  padding: 20px 0px;
-  font-size: 16px;
-}
-
-.course-section ul.section-list .section-item .lecture-name,
-.form-control {
-  font-weight: 400 !important;
-}
-
-.search {
-  display: none;
-}
-
-.description-row,
-.description_with_share_icons,
-.faq-answer {
-  font-weight: 400 !important;
-}
 .lecture-text-container a {
   color: rgb(0, 122, 255) !important;
 }
