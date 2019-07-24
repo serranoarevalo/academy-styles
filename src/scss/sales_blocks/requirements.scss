@@ -1,0 +1,57 @@
+.requirements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+  .requirements__title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+  }
+  .requirements__row {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 100px;
+    .requirements__book {
+      width: 280px;
+    }
+    .requirements__list {
+      padding: 0;
+      list-style-type: none;
+      .requirement {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        .requirement__icon {
+          box-shadow: $teachableShadow;
+          height: 40px;
+          width: 40px;
+          border-radius: 20px;
+          background-color: #25b47e;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 20px;
+          svg {
+            fill: white;
+          }
+        }
+        .requirement__text {
+          .requirement__label {
+            display: block;
+            font-size: 20px !important;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600 !important;
+          }
+          .requirement__anchor {
+            font-size: 14px !important;
+            font-style: italic;
+            color: #757dc0;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

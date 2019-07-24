@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin M780() {
+  @media screen and (max-width: 780px) {
+    @content;
+  }
+}

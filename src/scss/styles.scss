@@ -10,6 +10,9 @@
 @import "sales_page.scss";
 @import "sales_blocks/checkout.scss";
 @import "sales_blocks/glance.scss";
+@import "sales_blocks/clone.scss";
+@import "sales_blocks/video.scss";
+@import "sales_blocks/requirements.scss";
 
 .homepage-hero {
   padding-top: 250px;
@@ -153,6 +156,14 @@ footer {
 }
 .quiz-controls {
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.u-block-row {
+  width: 100%;
+  max-width: 980px;
+  padding: 0px 30px;
   margin-left: auto;
   margin-right: auto;
 }

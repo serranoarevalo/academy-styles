@@ -1,9 +1,10 @@
 .glance {
-  width: 60%;
+  width: 100%;
+  max-width: 980px;
   display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 80px auto;
+  margin: 150px auto;
   grid-gap: 50px;
   @include M1200 {
     grid-template-columns: repeat(2, 1fr);
@@ -25,6 +26,7 @@
     font-weight: 600 !important;
     font-size: 16px !important;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
     &.glance__text--kr {
       font-size: 18px !important;
     }
