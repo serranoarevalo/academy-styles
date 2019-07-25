@@ -2,17 +2,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   .requirements__title {
     font-family: "Montserrat", sans-serif;
-    font-weight: 600 !important;
     font-size: 24px !important;
+    font-weight: 600 !important;
   }
   .requirements__row {
     margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 100px;
+    @include M780 {
+      grid-template-columns: 1fr;
+      .requirements__book {
+        display: none;
+      }
+    }
     .requirements__book {
       width: 280px;
     }
@@ -20,9 +26,10 @@
       padding: 0;
       list-style-type: none;
       .requirement {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: 40px 1fr;
+        grid-gap: 30px;
+        margin-bottom: 50px;
         .requirement__icon {
           box-shadow: $teachableShadow;
           height: 40px;
@@ -32,17 +39,20 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 20px;
           svg {
             fill: white;
+            width: 18px;
+            height: 18px;
           }
         }
         .requirement__text {
+          width: 90%;
           .requirement__label {
             display: block;
-            font-size: 20px !important;
-            font-family: "Montserrat", sans-serif;
+            font-size: 18px !important;
             font-weight: 600 !important;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
           }
           .requirement__anchor {
             font-size: 14px !important;
