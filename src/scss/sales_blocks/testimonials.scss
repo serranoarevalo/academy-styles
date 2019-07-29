@@ -1,0 +1,28 @@
+.testimonials {
+  margin: 100px auto;
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    .testimonials__testimonial {
+      box-shadow: $teachableShadow;
+      padding: 25px;
+      background-color: white;
+      border-radius: 5px;
+      padding-bottom: 30px;
+      &:last-child {
+        display: flex;
+        align-items: center;
+        text-decoration: underline !important;
+        justify-content: center;
+        a {
+          font-weight: 600 !important;
+        }
+      }
+      .testimonial__quote {
+        font-size: 24px !important;
+        color: $darkPurple;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.preview {
+  margin-top: 150px;
+  margin-bottom: 80px;
+  h3 {
+    text-align: center;
+  }
+  ul {
+    margin-top: 50px;
+  }
+}
+
+.desktop-preview {
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("https://nomad-coders-assets.s3.ap-northeast-2.amazonaws.com/static/img/mac.png");
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  iframe {
+    margin-bottom: 50px;
+  }
+}
