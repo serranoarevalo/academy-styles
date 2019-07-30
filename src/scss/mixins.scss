@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@mixin M920 {
+  @media screen and (max-width: 920px) {
+    @content;
+  }
+}

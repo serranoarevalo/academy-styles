@@ -5,9 +5,10 @@
 @import "header.scss";
 @import "course-card.scss";
 @import "buttons.scss";
-@import "reviews.scss";
 @import "footer.scss";
+@import "testimonials.scss";
 @import "sales_page.scss";
+@import "home_hero.scss";
 @import "sales_blocks/checkout.scss";
 @import "sales_blocks/glance.scss";
 @import "sales_blocks/clone.scss";
@@ -17,6 +18,7 @@
 @import "sales_blocks/features.scss";
 @import "sales_blocks/preview.scss";
 @import "sales_blocks/testimonials.scss";
+@import "sales_blocks/hero.scss";
 
 .homepage-hero {
   padding-top: 250px;
@@ -147,7 +149,8 @@ footer {
   transform: translateX(-500px);
 }
 
-.fullman {
+.fullman,
+.hiddenBar ~ .course-mainbar {
   margin-left: 0 !important;
 }
 
@@ -176,4 +179,15 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: 26px !important;
   font-weight: 600 !important;
+}
+
+.switch-toggle label {
+  color: white !important;
+}
+
+@include M780 {
+  .large-img-rounded {
+    max-width: 70%;
+    margin-bottom: 30px;
+  }
 }

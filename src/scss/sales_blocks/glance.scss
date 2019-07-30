@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 150px auto;
+  margin-top: -90px;
   grid-gap: 50px;
   @include M1200 {
     grid-template-columns: repeat(2, 1fr);

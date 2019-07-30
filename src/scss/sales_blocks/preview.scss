@@ -20,5 +20,13 @@
   align-items: center;
   iframe {
     margin-bottom: 50px;
+    width: 75%;
+    height: 420px;
+  }
+  @include M920 {
+    background-image: none;
+    iframe {
+      width: 90%;
+    }
   }
 }
