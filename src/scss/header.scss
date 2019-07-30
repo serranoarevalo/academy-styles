@@ -65,3 +65,8 @@
 .navbar-course-hero.is-at-top a.fedora-navbar-link:hover {
   color: white !important;
 }
+
+.navbar.is-at-top .nav.navbar-nav > li .fedora-navbar-link:hover {
+  background-color: transparent !important;
+  color: #ccc !important;
+}

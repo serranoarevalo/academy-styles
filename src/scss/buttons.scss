@@ -3,7 +3,7 @@
 .btn-primary:focus,
 .btn-primary:focus:hover,
 .btn-primary {
-  background: linear-gradient(to left, #fdc830, #f37335) !important;
+  background: linear-gradient(-45deg, #fdc830, #f37335) !important;
   border: none !important;
   font-size: 16px !important;
   letter-spacing: normal !important;
@@ -30,7 +30,7 @@
 .btn-hg:hover,
 .btn-hg:focus,
 .btn-hg:focus:hover {
-  background: linear-gradient(to left, #8e2de2, #4a00e0) !important;
+  background: linear-gradient(-45deg, #8e2de2, #4a00e0) !important;
   font-size: 18px !important;
   padding: 20px !important;
 }
@@ -67,10 +67,10 @@ div.quiz-controls button {
 }
 
 .start-next-lecture {
-  background-image: linear-gradient(to left, #0575e6, #021b79) !important;
+  background-image: linear-gradient(-45deg, #0575e6, #021b79) !important;
 }
 
 .start-next-lecture:hover {
-  background-image: linear-gradient(to left, #0575e6, #021b79) !important;
+  background-image: linear-gradient(-45deg, #0575e6, #021b79) !important;
   transform: scale(1.05);
 }
