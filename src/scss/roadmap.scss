@@ -26,24 +26,44 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-gap: 40px;
+      grid-template-rows: 80px;
+      grid-auto-rows: 80px;
       padding: 0px 80px;
       .roadmap__map-item {
         text-align: center;
         box-shadow: $teachableShadow;
         cursor: pointer;
-        padding: 20px 30px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         white-space: nowrap;
-        font-weight: 600;
         transition: all 0.2s ease-in-out;
         border-radius: 10px;
         background-image: linear-gradient(-90deg, #0575e6, #021b79) !important;
         color: white;
         font-weight: 600 !important;
+        position: relative;
+        span {
+          position: absolute;
+          font-weight: 600 !important;
+          transition: opacity 0.3s ease-in-out;
+        }
+        .tech {
+          opacity: 0;
+        }
         &.map-clone {
           background: linear-gradient(-90deg, #fdc830, #f37335) !important;
         }
         &:hover {
           transform: scale(1.05);
+          .name {
+            opacity: 0;
+          }
+          .tech {
+            opacity: 1;
+          }
         }
         &.map-clone {
           animation: bgAnim 3s linear infinite;

@@ -1,7 +1,7 @@
 .specs {
   margin-bottom: 100px;
   @include M780 {
-    margin-bottom: 70px;
+    margin-bottom: 0px;
   }
   .specs__header {
     text-align: center;
@@ -24,7 +24,7 @@
     grid-gap: 80px;
     grid-template-columns: 2fr 1fr 2fr;
     @include M780 {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       img {
         display: none;
       }

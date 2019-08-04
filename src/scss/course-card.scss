@@ -127,3 +127,13 @@
     background-position: 0% 50%;
   }
 }
+
+.course-mainbar {
+  .course-list {
+    @include TeachableTablet {
+      grid-template-columns: 300px;
+      margin: 0px;
+      margin-left: 300px !important;
+    }
+  }
+}

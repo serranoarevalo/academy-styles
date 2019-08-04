@@ -6,12 +6,19 @@
   grid-gap: 30px;
   @include M780 {
     grid-template-columns: 1fr;
+    margin: 50px auto;
   }
   .features__row {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     place-items: center;
+    @include M780 {
+      grid-template-columns: 1fr;
+      &:not(:last-child) {
+        margin-bottom: 50px;
+      }
+    }
     &:not(:last-child) {
       margin-bottom: 80px;
     }
@@ -45,10 +52,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include M780 {
+    flex-direction: column;
+    .pdf__btn {
+      margin-top: 20px;
+    }
+  }
   .pdf__btn {
     background-color: white;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 16px !important;
+    text-decoration: none;
   }
 }

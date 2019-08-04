@@ -10,10 +10,19 @@
   @include M1200 {
     grid-template-columns: repeat(2, 1fr);
   }
+  @include M780 {
+    grid-template-columns: 1fr;
+  }
   .glance__column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    &:last-child {
+      img:not(.theory) {
+        height: auto;
+        margin-bottom: 24px;
+      }
+    }
     img {
       width: 150px;
       height: 150px;

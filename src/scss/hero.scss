@@ -21,9 +21,13 @@
     font-size: 28px !important;
   }
 }
-.hero__wave {
+
+.page-hero ~ .custom-hero__wave {
   top: -155px !important;
   margin-bottom: -120px;
+  @include M780 {
+    opacity: 1;
+  }
 }
 
 .home-hero {
@@ -38,8 +42,4 @@
 .roadmap-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://nomad-coders-assets.s3.ap-northeast-2.amazonaws.com/static/img/bgs/roadmapBG.jpg");
-}
-
-.home-hero ~ .hero__wave {
-  margin-bottom: -150px !important;
 }
